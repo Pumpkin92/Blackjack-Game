@@ -7,10 +7,13 @@ body {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 3rem;
+
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-bottom: 7rem;
+
   border-radius: 8px;
 }
 
@@ -19,7 +22,7 @@ h1 {
   color: #113f67;
   font-family: "Poppins", sans-serif;
 }
-p {
+.message {
   font-size: 2rem;
 }
 .cards,
@@ -42,6 +45,35 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+.newCardButton {
+  margin-bottom: 5rem;
+}
+
+footer {
+  padding: 1.2rem;
+  font-family: "Poppins", sans-serif;
+
+  color: #37598b;
+}
+
+.footerPara {
+  padding-bottom: 7px;
+}
+
+a {
+  text-decoration: none;
+  color: #113f67;
+}
+
+a:hover {
+  font-weight: 600;
+}
+.social-links a {
+  margin: 20px;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
 @media (max-width: 576px) {
   h1 {
     text-align: center;
@@ -51,7 +83,7 @@ button {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  p {
+  .message {
     font-size: 1.5rem;
   }
 }

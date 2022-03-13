@@ -1,15 +1,16 @@
 let cards = document.getElementById("cards");
+let sumEl = document.getElementById("sum");
+let message = document.getElementById("message");
 let firstCard = randomNumber();
 let secondCard = randomNumber();
 let card = [firstCard, secondCard];
 let sum = firstCard + secondCard;
-let sumEl = document.getElementById("sum");
-let message = document.getElementById("message");
+
 let isAlive = false;
 
 function startGame() {
   if (isAlive) {
-    alert("you already started");
+    alert("you have already started a game");
   } else {
     isAlive = true;
     renderGame();
@@ -23,11 +24,6 @@ function renderGame() {
   for (let i = 0; i < card.length; i++) {
     cards.textContent += card[i] + " ";
   }
-
-  //for (let i = 0; i < card.length; i++) {
-  // addition += card[i];
-  //}
-  //sum.textContent += addition;
 
   if (sum < 21) {
     message.textContent = "Would you like a new card?";
@@ -47,7 +43,6 @@ function newCard() {
   if (isAlive) {
     renderGame();
   } else {
-    alert("you lost");
   }
 }
 
